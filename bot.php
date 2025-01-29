@@ -60,8 +60,8 @@ while(true){
     $claim = $r['isEligible'];
     if($claim){
         echo "[+] is Eligible Found, Preparing Claim\n";        
-        $up = rand(100,150).".".rand(10,82);
-        $down = rand(220,885).".".rand(22157836104435,52157836104435);
+        $up = rand(10,30).".".rand(10,82);
+        $down = rand(20,55).".".rand(22157836104435,52157836104435);
         $lat = $ip['latitude'] ? $ip['latitude'] : 0;
         $log = $ip['longitude'] ? $ip['longitude'] : 0;
         $data = '{"download_speed":'.$down.',"upload_speed":"'.$up.'","latitude":'.$lat.',"logitude":'.$log.'}';        
